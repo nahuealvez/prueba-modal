@@ -1,0 +1,33 @@
+<div class="container py-5">
+  <h1>Formulario en Modal</h1>
+
+  <!-- Botón para abrir el modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+    Abrir Formulario
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">Formulario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Escribí tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@email.com">
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
